@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,ul{
+            padding:0;
+            margin:0;
+        }
+        ul{
+            list-style-type: none;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            min-width: 950px;
+            min-height: 800px;
+            background: url("./images/bg.jpg") no-repeat center/cover;
+        }
+        .course-page{
+            font-size: 60px;
+        } 
+        .course-page ul{
+            position: absolute;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+            margin: auto;
+            width: 930px;
+            height: 510px;
+            background-color: #fff;
+
+        }
+        .course-page li{
+            position:relative;
+            float: left;
+            padding:5px;
+            width: 300px;
+            height: 160px;
+            
+
+        }
+        .course-page li div{
+            width: 300px;
+            height: 160px;
+            text-align: center;
+            line-height: 160px;
+            font-size: 23px;
+            color:white;
+            background-color: rgba(0,0,0,0.7);
+        }
+        .course-page li>img, .course-page li>div{
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            transform: translate(5px,5px);
+            position:absolute;
+            opacity: 0;
+            transition:0.5s ;
+        }
+        .course-page>ul>li>img:nth-child(1) {
+            opacity: 1;
+            z-index: 2;
+        }
+        .course-page>ul>li:hover>div{
+            opacity: 1;
+            z-index: 3;
+        }
+        .course-page>ul>li:hover>img[alt$="b"]{
+            top:170px;
+            opacity: 1;
+            z-index: 3;
+        }
+        .course-page>ul>li:hover>img[alt$="r"]{
+            left:310px;
+            opacity: 1;
+            z-index: 3;
+        }
+        .course-page>ul>li:hover>img[alt$="t"]{
+            top:-170px;
+            opacity: 1;
+            z-index: 3;
+        }
+        .course-page>ul>li:hover>img[alt$="l"]{
+            left:-310px;
+            opacity: 1;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="course-page">
+        <ul>
+            <li>
+                <img src="./images/img1.png" alt="seo" >
+                <img src="./images/seob.jpg" alt="seob">
+                <img src="./images/seor.jpg" alt="seor">
+                <div class="info-back">SEO课程</div>
+            </li>
+            <li>
+                <img src="./images/img2.png" alt="seo" >
+                <img src="./images/taob.jpg" alt="taob">
+                <img src="./images/taol.jpg" alt="taol">
+                <img src="./images/taor.jpg" alt="taor">
+                <div class="info-back">淘宝美工课程</div>
+            </li>
+            <li>
+                <img src="./images/img3.png" alt="sy" >
+                <img src="./images/syb.jpg" alt="syb">
+                <img src="./images/syl.jpg" alt="syl">
+                <div class="info-back">淘宝摄像课程</div>
+            </li>
+            <li>
+                <img src="./images/img4.png" alt="j" >
+                <img src="./images/jb.jpg" alt="jb">
+                <img src="./images/jr.jpg" alt="jr">
+                <img src="./images/jt.jpg" alt="jt">
+                <div class="info-back">JAVA、C++、IOS</div>
+            </li>
+            <li>
+                <img src="./images/img5.png" alt="w" >
+                <img src="./images/wb.jpg" alt="wb">
+                <img src="./images/wr.jpg" alt="wr">
+                <img src="./images/wt.jpg" alt="wt">
+                <img src="./images/wl.jpg" alt="wl">
+                <div class="info-back">前端课程体系</div>
+            </li>
+            <li>
+                <img src="./images/img6.png" alt="p" >
+                <img src="./images/pb.jpg" alt="pb">
+                <img src="./images/pl.jpg" alt="pl">
+                <img src="./images/pt.png" alt="pt">
+                <div class="info-back">平面设计课程</div>
+            </li>
+            <li>
+                <img src="./images/img7.png" alt="w" >
+                <img src="./images/wlr.jpg" alt="wlr">
+                <img src="./images/wlt.jpg" alt="wlt">
+                <div class="info-back">网络营销课程</div>
+            </li>
+            <li>
+                <img src="./images/img8.png" alt="sn" >
+                <img src="./images/snr.jpg" alt="snr">
+                <img src="./images/snl.jpg" alt="snl">
+                <img src="./images/snt.jpg" alt="snt">
+                <div class="info-back">室内设计课程</div>
+            </li>
+            <li>
+                <img src="./images/img9.png" alt="yn" >
+                <img src="./images/ynl.jpg" alt="ynl">
+                <img src="./images/ynt.jpg" alt="ynt">
+                <div class="info-back">八大外语课程</div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
